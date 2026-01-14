@@ -44,14 +44,23 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Установите зависимости
-pip install -r requirements.txt
+pip install -r customtkinter
+matplotlib
+pillow
+psutil
+paramiko
+requests
+flask
+flask-socketio
+eventlet
+
 
 Use code with caution.
 🛠 Запуск
 bash
 
 # Из активированного окружения:
-python a.py
+python TEv3.py
 
 # Или через прямой путь (если нужно sudo):
 sudo ./venv/bin/python3 a.py
