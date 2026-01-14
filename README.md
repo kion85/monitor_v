@@ -35,9 +35,6 @@ Use code with caution.
 2. Развертывание проекта
 bash
 
-# Клонируйте репозиторий
-git clone github.com
-cd ВАШ_РЕПОЗИТОРИЙ
 
 # Создайте виртуальное окружение
 python3 -m venv venv
