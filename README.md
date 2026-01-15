@@ -1,73 +1,39 @@
-# monitor_v
+NetworkOS GUI & Web Tool (monitor_v)
+Инструмент для комплексного мониторинга сети и системных ресурсов с графическим (Tkinter) и веб-интерфейсом (Flask).
 
-customtkinter
-matplotlib
-pillow
-psutil
-paramiko
-requests
-flask
-flask-socketio
-eventlet
+🚀 Установка
+1. Системные зависимости
+Для корректной работы GUI и сканера Wi-Fi установите пакеты:
+Debian/Ubuntu/Kali:
 
-# NetworkOS GUI & Web Tool
+sudo apt update && sudo apt install python3-tk python3-pil python3-pil.imagetk wireless-tools -y
 
-Инструмент для мониторинга сети и системных ресурсов с графическим и веб-интерфейсом.
+Arch Linux:
 
-## 🚀 Установка
+sudo pacman -S tk python-pillow wireless_tools
 
-### 1. Системные зависимости
-Для работы интерфейса и сканера Wi-Fi установите необходимые пакеты: 
 
-* **Debian/Ubuntu/Kali:**
-  ```bash
-  sudo apt update && sudo apt install python3-tk python3-pil python3-pil.imagetk wireless-tools -y
+2. Развертывание окружения
 
-Use code with caution.
-
-    Arch Linux:
-    bash
-
-    sudo pacman -S tk python-pillow wireless_tools
-
--------------------------------------------------------
-
-# Создайте виртуальное окружение
 python3 -m venv venv
 source venv/bin/activate
-
-# Установите зависимости
-pip install -r customtkinter
-matplotlib
-pillow
-psutil
-paramiko
-requests
-flask
-flask-socketio
-eventlet
+pip install customtkinter matplotlib pillow psutil paramiko requests flask flask-socketio eventlet
 
 
 🛠 Запуск
-# Из активированного окружения:
-python TEv3.py
+Для работы Wi-Fi сканера и доступа к системным ресурсам требуются права суперпользователя:
 
-# Или через прямой путь (если нужно sudo):
-sudo ./venv/bin/python3 a.py
+sudo ./venv/bin/python3 TEv3.py
 
-Use code with caution.
+
+🔐 Авторизация
+Для входа в систему используйте стандартные учетные данные:
+
+Логин: root
+Пароль: root
+
 ⚠️ Решение частых проблем
 
-    ImportError (customtkinter): Убедитесь, что в коде импорт написан как import customtkinter as ctk.
-    Ошибка iwlist: Требуется установленный пакет wireless-tools.
-    Flask Error: Если порт 5000 занят, измените его в настройках app.run.
-
-{content: }
-    python3 -m venv venv
-    source venv/bin/activate
-    ./venv/bin/pip install customtkinter matplotlib pillow psutil paramiko requests flask flask-socketio eventlet
-
-
-
-
-    ПАРОЛЬ И ЛОГИН root
+ImportError (customtkinter): Проверьте, что в коде используется import customtkinter as ctk.
+Ошибка iwlist: Убедитесь, что установлен пакет wireless-tools.
+Flask Error: Если порт 5000 занят, измените его в параметрах app.run в основном файле.
