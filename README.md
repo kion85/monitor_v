@@ -16,7 +16,15 @@ sudo pacman -S tk python-pillow wireless_tools
 2. Развертывание окружения
 
 python3 -m venv venv
+
+
+
 source venv/bin/activate
+
+
+
+
+
 pip install customtkinter matplotlib pillow psutil paramiko requests flask flask-socketio eventlet
 
 
