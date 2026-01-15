@@ -30,11 +30,7 @@ Use code with caution.
 
     sudo pacman -S tk python-pillow wireless_tools
 
-    Use code with caution.
-
-2. Развертывание проекта
-bash
-
+-------------------------------------------------------
 
 # Создайте виртуальное окружение
 python3 -m venv venv
@@ -52,10 +48,7 @@ flask-socketio
 eventlet
 
 
-Use code with caution.
 🛠 Запуск
-bash
-
 # Из активированного окружения:
 python TEv3.py
 
@@ -73,3 +66,8 @@ Use code with caution.
     python3 -m venv venv
     source venv/bin/activate
     ./venv/bin/pip install customtkinter matplotlib pillow psutil paramiko requests flask flask-socketio eventlet
+
+
+
+
+    ПАРОЛЬ И ЛОГИН root
